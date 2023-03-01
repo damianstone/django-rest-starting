@@ -13,14 +13,21 @@ source venv-api/bin/activate
 pip install -r requirements.txt
 ```
 
+#### Create superuser
+
+```python
+python manage.py createsuperuser
+```
+
 #### Add sqlite db
 
 ```bash
 db.sqlite3
 ```
 
-#### Add PostgreSQL db (discomment the code in settings.py)
-
+#### Add PostgreSQL db (uncomment the code in settings.py)
+Then, create an `.env` file  and add the following to connect your local database
+ 
 ```bash
 LOCAL_DB_NAME=db-name
 LOCAL_DB_USER=
