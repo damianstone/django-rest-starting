@@ -19,10 +19,14 @@ pip install -r requirements.txt
 db.sqlite3
 ```
 
-#### Add PostgreSQL db
+#### Add PostgreSQL db (discomment the code in settings.py)
 
 ```bash
-db.sqlite3
+LOCAL_DB_NAME=db-name
+LOCAL_DB_USER=
+LOCAL_DB_PASSWORD=
+LOCAL_DB_HOST=127.0.0.1
+LOCAL_DB_PORT=5432
 ```
 
 #### Migrate models
